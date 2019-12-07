@@ -2,12 +2,11 @@ package com.dtorres.evaluacionapp.Modelo;
 
 public class Mascota {
 
-   private Long id;
-   private String Nombres;
-   private String Raza;
-   private String Edad;
-   private String Fto;
-   private String Dueño;
+    private Long id;
+    private String nombre;
+    private String raza;
+    private Integer edad;
+    private String foto;
 
     public Long getId() {
         return id;
@@ -17,55 +16,46 @@ public class Mascota {
         this.id = id;
     }
 
-    public String getNombres() {
-        return Nombres;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNombres(String nombres) {
-        Nombres = nombres;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getRaza() {
-        return Raza;
+        return raza;
     }
 
     public void setRaza(String raza) {
-        Raza = raza;
+        this.raza = raza;
     }
 
-    public String getEdad() {
-        return Edad;
+    public Integer getEdad() {
+        return edad;
     }
 
-    public void setEdad(String edad) {
-        Edad = edad;
+    public void setEdad(Integer edad) {
+        this.edad = edad;
     }
 
-    public String getFto() {
-        return Fto;
+    public String getFoto() {
+        return foto;
     }
 
-    public void setFto(String fto) {
-        Fto = fto;
-    }
-
-    public String getDueño() {
-        return Dueño;
-    }
-
-    public void setDueño(String dueño) {
-        Dueño = dueño;
+    public void setFoto(String foto) {
+        this.foto = foto;
     }
 
     @Override
     public String toString() {
-        return "Mascota{" +
+        return "Pet{" +
                 "id=" + id +
-                ", Nombres='" + Nombres + '\'' +
-                ", Raza='" + Raza + '\'' +
-                ", Edad='" + Edad + '\'' +
-                ", Fto='" + Fto + '\'' +
-                ", Dueño='" + Dueño + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", raza='" + raza + '\'' +
+                ", edad=" + edad +
+                ", foto='" + foto + '\'' +
                 '}';
     }
 }

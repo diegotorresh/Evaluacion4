@@ -2,51 +2,60 @@ package com.dtorres.evaluacionapp.Modelo;
 
 public class Usuario {
 
-    private Long id;
-    private String Nombre;
-    private String Correo;
-    private String Contraseña;
+    private Integer id;
+    private String nombres;
+    private String correo;
+    private String contraseña;
+    private String token;
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
-    public String getNombre() {
-        return Nombre;
+    public String getNombres() {
+        return nombres;
     }
 
-    public void setNombre(String nombre) {
-        Nombre = nombre;
+    public void setNombres(String nombres) {
+        this.nombres = nombres;
     }
 
     public String getCorreo() {
-        return Correo;
+        return correo;
     }
 
     public void setCorreo(String correo) {
-        Correo = correo;
+        this.correo = correo;
     }
 
     public String getContraseña() {
-        return Contraseña;
+        return contraseña;
     }
 
     public void setContraseña(String contraseña) {
-        Contraseña = contraseña;
+        this.contraseña = contraseña;
     }
 
+    public String getToken() {
+        return token;
+    }
+
+    public void setToken(String token) {
+        this.token = token;
+    }
 
     @Override
     public String toString() {
-        return "Mascota{" +
+        return "User{" +
                 "id=" + id +
-                ", Nombre='" + Nombre + '\'' +
-                ", Correo='" + Correo + '\'' +
-                ", Contraseña='" + Contraseña + '\'' +
+                ", nombres='" + nombres + '\'' +
+                ", correo='" + correo + '\'' +
+                ", contraseña='" + contraseña + '\'' +
+                ", token='" + token + '\'' +
                 '}';
     }
 }
